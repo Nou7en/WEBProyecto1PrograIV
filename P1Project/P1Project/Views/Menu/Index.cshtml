@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .menu-container {
+            menu-container
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Centra el contenido horizontalmente */
+        }
+
+        }
+
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #000;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            text-align: center; /* Centra el contenido */
+        }
+
+        th {
+            background-color: #000;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .increment-decrement-container {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centra los botones y el contador */
+        }
+
+        .increment-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+
+        .decrement-button {
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+
+        .contador {
+            font-size: 18px;
+            margin: 0 5px;
+        }
+
+        #ordenar-button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+            #ordenar-button:hover {
+                background-color: #333;
+            }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1 style="color: #000;">Menu del restaurante</h1>
+        <label for="mesa">Seleccione la mesa:</label>
+        <select id="mesa" name="mesa">
+            <option value="1">Mesa 1</option>
+            <option value="2">Mesa 2</option>
+            <option value="3">Mesa 3</option>
+            <option value="4">Mesa 4</option>
+            <option value="5">Mesa 5</option>
+            <option value="6">Mesa 6</option>
+        </select>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID PLATO</th>
+                    <th>NOMBRE</th>
+                    <th>PRECIO</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Chaulafan</td>
+                    <td>$5</td>
+                    <td class="increment-decrement-container">
+                        <button class="decrement-button" onclick="decrementar(this)">-</button>
+                        <span class="contador">1</span>
+                        <button class="increment-button" onclick="incrementar(this)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tallarin Mixto</td>
+                    <td>$5.50</td>
+                    <td class="increment-decrement-container">
+                        <button class="decrement-button" onclick="decrementar(this)">-</button>
+                        <span class="contador">1</span>
+                        <button class="increment-button" onclick="incrementar(this)">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Wantang</td>
+                    <td>$3.50</td>
+                    <td class="increment-decrement-container">
+                        <button class="decrement-button" onclick="decrementar(this)">-</button>
+                        <span class="contador">1</span>
+                        <button class="increment-button" onclick="incrementar(this)">+</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="ordenar-button">Ordenar</button>
+    </div>
+
+    <script>
+        function incrementar(button) {
+            var contador = button.parentElement.querySelector('.contador');
+            contador.textContent = parseInt(contador.textContent) + 1;
+        }
+
+        function decrementar(button) {
+            var contador = button.parentElement.querySelector('.contador');
+            var valor = parseInt(contador.textContent);
+            if (valor > 0) {
+                contador.textContent = valor - 1;
+            }
+        }
+    </script>
+</body>
+</html>

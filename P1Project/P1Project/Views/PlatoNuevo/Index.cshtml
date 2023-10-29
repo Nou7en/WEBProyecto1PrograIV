@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ingresar Nuevo Plato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Centro de contenido */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"], button {
+            background-color: #000; /* Color negro */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+            input[type="submit"]:hover, button:hover {
+                background-color: #333; /* Cambio a un tono más oscuro al pasar el cursor */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ingresar Nuevo Plato</h1>
+        <form action="procesar_ingreso.php" method="POST">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required>
+
+            <input type="submit" value="Guardar">
+        </form>
+        <a href="@Url.Action("Index", "Mesa")">
+            <button>Regresar</button>
+        </a>
+    </div>
+</body>
+</html>
+

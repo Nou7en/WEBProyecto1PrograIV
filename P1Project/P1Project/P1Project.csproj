@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Home\assets\**" />
+    <Compile Remove="Views\Home\css\**" />
+    <Compile Remove="Views\Home\js\**" />
+    <Content Remove="Views\Home\assets\**" />
+    <Content Remove="Views\Home\css\**" />
+    <Content Remove="Views\Home\js\**" />
+    <EmbeddedResource Remove="Views\Home\assets\**" />
+    <EmbeddedResource Remove="Views\Home\css\**" />
+    <EmbeddedResource Remove="Views\Home\js\**" />
+    <None Remove="Views\Home\assets\**" />
+    <None Remove="Views\Home\css\**" />
+    <None Remove="Views\Home\js\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Home\CodeFile.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Privacy - Copia.cshtml" />
+  </ItemGroup>
+
+</Project>

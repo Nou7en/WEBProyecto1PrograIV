@@ -1,0 +1,60 @@
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\bin\Debug\net7.0\appsettings.json
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\bin\Debug\net7.0\P1Project.staticwebassets.runtime.json
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\bin\Debug\net7.0\P1Project.exe
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\bin\Debug\net7.0\P1Project.deps.json
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\bin\Debug\net7.0\P1Project.runtimeconfig.json
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\bin\Debug\net7.0\P1Project.dll
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\bin\Debug\net7.0\P1Project.pdb
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\P1Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\P1Project.AssemblyInfoInputs.cache
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\P1Project.AssemblyInfo.cs
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\P1Project.csproj.CoreCompileInputs.cache
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\P1Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\P1Project.RazorAssemblyInfo.cache
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\P1Project.RazorAssemblyInfo.cs
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\staticwebassets\msbuild.P1Project.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\staticwebassets\msbuild.build.P1Project.props
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.P1Project.props
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.P1Project.props
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\scopedcss\bundle\P1Project.styles.css
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\scopedcss\projectbundle\P1Project.bundle.scp.css
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\P1Project.dll
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\refint\P1Project.dll
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\P1Project.pdb
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\P1Project.genruntimeconfig.cache
+C:\Users\Carlos Esteban Larco\source\repos\P1Project\P1Project\obj\Debug\net7.0\ref\P1Project.dll
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\bin\Debug\net7.0\appsettings.Development.json
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\bin\Debug\net7.0\appsettings.json
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\bin\Debug\net7.0\P1Project.staticwebassets.runtime.json
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\bin\Debug\net7.0\P1Project.exe
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\bin\Debug\net7.0\P1Project.deps.json
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\bin\Debug\net7.0\P1Project.runtimeconfig.json
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\bin\Debug\net7.0\P1Project.dll
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\bin\Debug\net7.0\P1Project.pdb
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.GeneratedMSBuildEditorConfig.editorconfig
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.AssemblyInfoInputs.cache
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.AssemblyInfo.cs
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.csproj.CoreCompileInputs.cache
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.MvcApplicationPartsAssemblyInfo.cache
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.RazorAssemblyInfo.cache
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.RazorAssemblyInfo.cs
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\staticwebassets\msbuild.P1Project.Microsoft.AspNetCore.StaticWebAssets.props
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\staticwebassets\msbuild.build.P1Project.props
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.P1Project.props
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.P1Project.props
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\staticwebassets.pack.json
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\staticwebassets.build.json
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\staticwebassets.development.json
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\scopedcss\bundle\P1Project.styles.css
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\scopedcss\projectbundle\P1Project.bundle.scp.css
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.dll
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\refint\P1Project.dll
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.pdb
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.genruntimeconfig.cache
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\ref\P1Project.dll

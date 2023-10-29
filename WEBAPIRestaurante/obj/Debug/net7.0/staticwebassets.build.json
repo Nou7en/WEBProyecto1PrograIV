@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "f9fUHParxcz3YCwoqDRodT5GYZGpVzWd5s2X0B1VVCg=",
+  "Source": "WEBAPIRestaurante",
+  "BasePath": "_content/WEBAPIRestaurante",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

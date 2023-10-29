@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Mesas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .mesa-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 4cm; /* Ajuste para mover las mesas 4 cm abajo */
+        }
+
+        .mesa {
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            display: inline-block;
+        }
+
+            .mesa h2 {
+                font-size: 24px;
+                color: #007BFF; /* Cambio a color azul */
+            }
+
+            .mesa .visualizar-button {
+                background-color: #000; /* Mantiene el color negro */
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 18px;
+                margin: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+                .mesa .visualizar-button:hover {
+                    background-color: #333; /* Cambio a un tono más oscuro al pasar el cursor */
+                }
+
+            .mesa .terminar-button {
+                background-color: #FF0000; /* Cambio a color rojo */
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 18px;
+                margin: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+                .mesa .terminar-button:hover {
+                    background-color: #990000; /* Cambio a un tono más oscuro al pasar el cursor */
+                }
+
+        #botonContainer {
+            position: absolute;
+            bottom: 3cm; /* Cambio para mover el botón 2 cm arriba de la parte inferior */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #nuevoPlatoButton {
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            #nuevoPlatoButton:hover {
+                background-color: #333;
+            }
+    </style>
+</head>
+<body>
+    <div class="mesa-container">
+        <div class="mesa">
+            <h2>Mesa 1</h2>
+            <a href="@Url.Action("Pedido", "Home")">
+                <button class="visualizar-button">Visualizar Pedido</button>
+            </a>
+            <a href="@Url.Action("Index", "Factura")">
+                <button class="terminar-button">Terminar Mesa</button>
+            </a>
+        </div>
+
+        <div class="mesa">
+            <h2>Mesa 2</h2>
+            <a href="@Url.Action("Pedido", "Home")">
+                <button class="visualizar-button">Visualizar Pedido</button>
+            </a>
+            <a href "@Url.Action("Index", "Factura")">
+                <button class="terminar-button">Terminar Mesa</button>
+            </a>
+        </div>
+
+        <div class="mesa">
+            <h2>Mesa 3</h2>
+            <a href="@Url.Action("Pedido", "Home")">
+                <button class="visualizar-button">Visualizar Pedido</button>
+            </a>
+            <a href="@Url.Action("Index", "Factura")">
+                <button class="terminar-button">Terminar Mesa</button>
+            </a>
+        </div>
+
+        <div class="mesa">
+            <h2>Mesa 4</h2>
+            <a href="@Url.Action("Pedido", "Home")">
+                <button class="visualizar-button">Visualizar Pedido</button>
+            </a>
+            <a href="@Url.Action("Index", "Factura")">
+                <button class="terminar-button">Terminar Mesa</button>
+            </a>
+        </div>
+
+        <div class="mesa">
+            <h2>Mesa 5</h2>
+            <a href="@Url.Action("Pedido", "Home")">
+                <button class="visualizar-button">Visualizar Pedido</button>
+            </a>
+            <a href="@Url.Action("Index", "Factura")">
+                <button class="terminar-button">Terminar Mesa</button>
+            </a>
+        </div>
+
+        <div class="mesa">
+            <h2>Mesa 6</h2>
+            <a href="@Url.Action("Pedido", "Home")">
+                <button class="visualizar-button">Visualizar Pedido</button>
+            </a>
+            <a href="@Url.Action("Index", "Factura")">
+                <button class="terminar-button">Terminar Mesa</button>
+            </a>
+        </div>
+    </div>
+
+    <div id="botonContainer">
+        <a href="@Url.Action("Index", "PlatoNuevo")">
+            <button id="nuevoPlatoButton">Insertar Nuevo Plato</button>
+        </a>
+    </div>
+</body>
+</html>
