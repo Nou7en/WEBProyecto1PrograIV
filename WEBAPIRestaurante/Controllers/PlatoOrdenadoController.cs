@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WEBAPIRestaurante.Datos;
 using WEBAPIRestaurante.Modelos;
+using WEBAPIRestaurante.Modelos.Dto;
 
 namespace WEBAPIRestaurante.Controllers
 {
@@ -16,19 +17,26 @@ namespace WEBAPIRestaurante.Controllers
             _dbPO = dbPO;
         }
         [HttpPost]
-        public async Task<IActionResult> AgregarPlatoOrdenado(PlatoOrdenado platoOrdenado)
+        public async Task<IActionResult> AgregarPlatoOrdenado(PlatoOrdenadoDto platoOrdenadoDto)
         {
-            if (platoOrdenado == null)
+            if (platoOrdenadoDto == null)
             {
                 return BadRequest("El plato ordenado no existe");
 
             }
-            Plato plato = await _dbPO.Menu.FirstOrDefaultAsync(po => po.IdPlato == platoOrdenado.IdPlato);
+            Plato plato = await _dbPO.Menu.FirstOrDefaultAsync(po => po.IdPlato == platoOrdenadoDto.IdPlato);
             if (plato == null)
             {
                 return BadRequest("Plato no existe");
             }
-            platoOrdenado.plato = plato;
+            PlatoOrdenado platoOrdenado = new PlatoOrdenado
+            {
+                Cantidad = platoOrdenadoDto.Cantidad,
+                IdPlato = platoOrdenadoDto.IdPlato,
+                Id_PlatoOrdenado = platoOrdenadoDto.Id_PlatoOrdenado,
+                Entregado = platoOrdenadoDto.Entregado,
+                plato = plato
+            };
 
             await _dbPO.PlatosOrdenados.AddAsync(platoOrdenado);
             await _dbPO.SaveChangesAsync();
@@ -44,6 +52,8 @@ namespace WEBAPIRestaurante.Controllers
             {
                 return NoContent();
             }
+            Plato plato = await _dbPO.Menu.FirstOrDefaultAsync(p => p.IdPlato == platoOrdenado.IdPlato);
+            platoOrdenado.plato = plato;
             return Ok(platoOrdenado);
         }
 
