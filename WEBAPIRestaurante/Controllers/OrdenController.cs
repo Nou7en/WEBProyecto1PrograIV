@@ -29,7 +29,7 @@ namespace WEBAPIRestaurante.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CrearOrden([FromBody] Orden nOrden)
+        public async Task<IActionResult> CrearOrden(Orden nOrden)
         {
             Mesa m = await _dbOC.Mesas.FirstOrDefaultAsync(m => m.IdMesa == nOrden.IdMesa);
             if (m == null)

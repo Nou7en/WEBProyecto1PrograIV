@@ -53,7 +53,7 @@ namespace WEBAPIRestaurante.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult<Plato>> CrearPlato([FromBody] Plato nplato)
+        public async Task<ActionResult<Plato>> CrearPlato(Plato nplato)
         {
 
             if (!ModelState.IsValid)
@@ -119,7 +119,7 @@ namespace WEBAPIRestaurante.Controllers
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status400BadRequest)]
 
-        public async Task<IActionResult> EditarPlato(int id, [FromBody] Plato eplato)
+        public async Task<IActionResult> EditarPlato(int id, Plato eplato)
         {
             if (eplato == null || id != eplato.IdPlato )
             {

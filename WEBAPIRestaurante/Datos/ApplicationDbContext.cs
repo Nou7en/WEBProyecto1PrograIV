@@ -34,6 +34,45 @@ namespace WEBAPIRestaurante.Datos
                         ImagenUrl = "",
                     }
                );
+            modelBuilder.Entity<Mesa>().HasData(
+                new Mesa()
+                {
+                    IdMesa = 1,
+                    Id_Orden = 0,
+                    Estado = false,
+                },
+                    new Mesa()
+                    {
+                        IdMesa = 2,
+                        Id_Orden = 0,
+                        Estado = false,
+                    },
+                    new Mesa()
+                    {
+                        IdMesa = 3,
+                        Id_Orden = 0,
+                        Estado = false,
+                    },
+                    new Mesa()
+                    {
+                        IdMesa = 4,
+                        Id_Orden = 0,
+                        Estado = false,
+                    },
+                    new Mesa()
+                    {
+                        IdMesa = 5,
+                        Id_Orden = 0,
+                        Estado = false,
+                    },
+                    new Mesa()
+                    {
+                        IdMesa = 6,
+                        Id_Orden = 0,
+                        Estado = false,
+                    }
+
+                );
         }
     }
 }

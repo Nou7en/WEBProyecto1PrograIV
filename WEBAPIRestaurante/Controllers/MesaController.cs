@@ -20,13 +20,16 @@ namespace WEBAPIRestaurante.Controllers
             return Ok(await _dbM.Mesas.ToListAsync());
         }
         [HttpGet("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> ObtenerMesa(int id)
         {
             if (id == 0)
             {
                 return BadRequest();
             }
-            var mesa = _dbM.Mesas.FirstOrDefaultAsync(m => m.IdMesa == id);
+            var mesa = await _dbM.Mesas.FirstOrDefaultAsync(m => m.IdMesa == id);
             if (mesa == null)
             {
                 return NotFound();

@@ -16,7 +16,7 @@ namespace WEBAPIRestaurante.Controllers
             _dbPO = dbPO;
         }
         [HttpPost]
-        public async Task<IActionResult> AgregarPlatoOrdenado([FromBody]PlatoOrdenado platoOrdenado, int IdPlato )
+        public async Task<IActionResult> AgregarPlatoOrdenado(PlatoOrdenado platoOrdenado)
         {
             if (platoOrdenado == null)
             {
@@ -28,11 +28,10 @@ namespace WEBAPIRestaurante.Controllers
             {
                 return BadRequest("Plato no existe");
             }
-
             platoOrdenado.plato = plato;
 
-            _dbPO.PlatosOrdenados.AddAsync(platoOrdenado);
-            _dbPO.SaveChangesAsync();
+            await _dbPO.PlatosOrdenados.AddAsync(platoOrdenado);
+            await _dbPO.SaveChangesAsync();
             return Ok("platoOrdenado agregado correctamente");
 
 
@@ -40,7 +39,7 @@ namespace WEBAPIRestaurante.Controllers
         [HttpGet("{id:int}")]
         public async Task<IActionResult>IObtenerPlatoOrdenado(int id)
         {
-            var platoOrdenado = _dbPO.PlatosOrdenados.FirstOrDefaultAsync(po => po.Id_PlatoOrdenado == id);
+            var platoOrdenado = await _dbPO.PlatosOrdenados.FirstOrDefaultAsync(po => po.Id_PlatoOrdenado == id);
             if (platoOrdenado == null)
             {
                 return NoContent();

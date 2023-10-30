@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WEBAPIRestaurante.Modelos
@@ -10,7 +11,7 @@ namespace WEBAPIRestaurante.Modelos
         public int IdPlato { get; set; }
         public int Cantidad { get; set; }
         public bool Entregado { get; set; }
-
+        [BindNever]
         public Plato plato { get; set; }
 
     }

@@ -58,3 +58,4 @@ D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\D
 D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.pdb
 D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.genruntimeconfig.cache
 D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\ref\P1Project.dll
+D:\UDLA Trabajos\Semestre 5\Programacio IV\Proyecto P1\P1Project\P1Project\obj\Debug\net7.0\P1Project.csproj.AssemblyReference.cache
