@@ -1,14 +1,26 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using P1Project.Models;
+using P1Project.Service;
 
 namespace P1Project.Controllers
 {
     public class MenuController : Controller
     {
-        // GET: MenuController
-        public ActionResult Index()
+
+        private readonly IAPIService _apiService;
+
+        public MenuController(IAPIService aPIService)
         {
-            return View();
+
+            _apiService = aPIService;
+        }
+        // GET: MenuController
+        public async Task<IActionResult> Index()
+        {
+            List<Plato> platos = await _apiService.GetPlatos();
+
+            return View(platos);
         }
 
         // GET: MenuController/Details/5

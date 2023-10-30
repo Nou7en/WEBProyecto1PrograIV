@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JFMuz30McQXDFi5vi5UiOT63rs7VjLMhqeTDdvisSY+Ta+Funs9olTsVsb731wPAyjvIhpnM6uNjhyYba4CrEQ==",
+  "dgSpecHash": "LexNWL1Sody43zNprX8oyRSOQTbGk8UAg+F/0QUl2QK4gEey+KJYSizcy0SPPXafGe1Rvn63DPhxWUqzd1QtjQ==",
   "success": true,
   "projectFilePath": "D:\\UDLA Trabajos\\Semestre 5\\Programacio IV\\Proyecto P1\\P1Project\\P1Project\\P1Project.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\TonyGku\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

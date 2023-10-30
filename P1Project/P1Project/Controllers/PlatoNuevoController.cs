@@ -1,10 +1,19 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using P1Project.Service;
 
 namespace P1Project.Controllers
 {
     public class PlatoNuevoController : Controller
     {
+
+        private readonly IAPIService _apiService;
+
+        public PlatoNuevoController(IAPIService aPIService)
+        {
+
+            _apiService = aPIService;
+        }
         // GET: PlatoNuevoController
         public ActionResult Index()
         {
