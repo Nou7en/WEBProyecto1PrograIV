@@ -23,5 +23,5 @@ namespace P1Project.Service
 
         public Task<Boolean> EditarPlato(int id, Plato eplato);
 
-        }
+    }
 }

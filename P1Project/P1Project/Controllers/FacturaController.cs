@@ -1,20 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using P1Project.Service;
 
 namespace P1Project.Controllers
 {
     public class FacturaController : Controller
-
     {
-        private readonly IAPIService _apiService;
-
-        public FacturaController(IAPIService aPIService)
-        {
-
-            _apiService = aPIService;
-        }
-
         // GET: FacturaController
         public ActionResult Index()
         {

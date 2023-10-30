@@ -1,18 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using P1Project.Service;
 
 namespace P1Project.Controllers
 {
     public class MesaController : Controller
     {
-
-        private readonly IAPIService _apiService;
-
-        public MesaController(IAPIService aPIService) { 
-        
-            _apiService = aPIService;
-        }
         // GET: MesaController
         public ActionResult Index()
         {

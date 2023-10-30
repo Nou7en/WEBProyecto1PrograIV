@@ -1,9 +1,7 @@
-﻿using Newtonsoft.Json;
-using P1Project.Models;
-using System.Net.Http.Json;
+﻿using P1Project.Models;
 using System.Text;
-using System.Text.Json.Serialization;
 using System.Net;
+using Newtonsoft.Json;
 
 namespace P1Project.Service
 {
@@ -13,11 +11,12 @@ namespace P1Project.Service
         public static string _baseUrl;
 
         public HttpClient _httpClient;
-        public APIService() { 
-           
-            var builder= new ConfigurationBuilder().
+        public APIService()
+        {
+
+            var builder = new ConfigurationBuilder().
                 SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.jason")
+                .AddJsonFile("appsettings.json")
                 .Build();
 
             _baseUrl = builder.GetSection("ApiSettings:BaseUrl").Value;
@@ -43,7 +42,7 @@ namespace P1Project.Service
         public async Task<Plato> CrearPlato(Plato nplato)
         {
             var content = new StringContent(JsonConvert.SerializeObject(nplato), Encoding.UTF8, "application/json");
-            var response = await _httpClient.PostAsync("/api/Plato/", content );
+            var response = await _httpClient.PostAsync("/api/Plato/", content);
             if (response.IsSuccessStatusCode)
             {
                 var json_response = await response.Content.ReadAsStringAsync();
@@ -71,7 +70,7 @@ namespace P1Project.Service
             {
                 var json_response = await response.Content.ReadAsStringAsync();
                 Plato plato = JsonConvert.DeserializeObject<Plato>(json_response);
-                return true ;
+                return true;
             }
             return false;
         }
@@ -82,7 +81,7 @@ namespace P1Project.Service
             if (response.IsSuccessStatusCode)
             {
                 var json_response = await response.Content.ReadAsStringAsync();
-                Plato plato = JsonConvert.DeserializeObject <Plato>(json_response);
+                Plato plato = JsonConvert.DeserializeObject<Plato>(json_response);
                 return plato;
             }
             return new Plato();
@@ -91,7 +90,8 @@ namespace P1Project.Service
         public async Task<List<Plato>> GetPlatos()
         {
             var response = await _httpClient.GetAsync("/api/Plato");
-            if (response.IsSuccessStatusCode) {
+            if (response.IsSuccessStatusCode)
+            {
                 var json_response = await response.Content.ReadAsStringAsync();
                 List<Plato> plato = JsonConvert.DeserializeObject<List<Plato>>(json_response);
                 return plato;
@@ -108,7 +108,7 @@ namespace P1Project.Service
 
         }
 
-        public async  Task<Mesa> ObtenerMesa(int id)
+        public async Task<Mesa> ObtenerMesa(int id)
         {
             var response = await _httpClient.GetAsync($"/api/Mesa/{id}");
             if (response.IsSuccessStatusCode)
